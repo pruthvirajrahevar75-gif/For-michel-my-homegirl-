@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Favorite Human ❤️</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:linear-gradient(135deg,#ffd6e7,#ffeef5,#fff7fa);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.card{
+    width:90%;
+    max-width:600px;
+    background:white;
+    padding:35px;
+    border-radius:25px;
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+    text-align:center;
+}
+
+h1{
+    color:#ff4f81;
+}
+
+p{
+    color:#555;
+    font-size:18px;
+    line-height:1.8;
+}
+
+button{
+    background:#ff4f81;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    border-radius:30px;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+#message{
+    margin-top:25px;
+    color:#ff4f81;
+    font-weight:bold;
+    font-size:22px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>Hey Beautiful 🌸</h1>
+
+<p>
+I don't know what happened today,
+but I want you to know something...
+</p>
+
+<p>
+You are stronger than you think,
+braver than you believe,
+and more loved than you realize. ❤️
+</p>
+
+<p>
+It's okay to have bad days.
+Even the brightest stars disappear during the day...
+they're still shining. ✨
+</p>
+
+<button onclick="showLove()">Tap Me 💖</button>
+
+<div id="message"></div>
+
+</div>
+
+<script>
+
+const messages=[
+"You're doing better than you think. 🌸",
+"Take a deep breath. Tomorrow is a new beginning. ☀️",
+"You're precious, valued, and deeply appreciated. 💕",
+"Your smile makes the world brighter. 😊",
+"One bad day never defines an amazing person like you. 🌈",
+"Remember... your best friend believes in you endlessly. ❤️",
+"Sending you the biggest virtual hug ever! 🤗",
+"You deserve happiness, peace, and all the ice cream in the world 🍦💕"
+];
+
+function showLove(){
+let random=messages[Math.floor(Math.random()*messages.length)];
+document.getElementById("message").innerHTML=random+"<br><br>❤️ You're never alone. ❤️";
+}
+
+</script>
+
+</body>
+</html>
